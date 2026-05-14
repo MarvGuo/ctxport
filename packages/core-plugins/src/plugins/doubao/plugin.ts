@@ -53,7 +53,7 @@ export const doubaoPlugin: Plugin = {
       // Fallback: any div with header class containing flex-end area
       'div[class*="header"] > .justify-end',
       // Fallback: standard HTML header element with action area
-      'header .justify-end',
+      "header .justify-end",
     ],
     copyButtonPosition: "prepend",
     listItemLinkSelector: 'nav a[href^="/chat/"]',
@@ -263,8 +263,7 @@ function demoteHeadings(text: string): string {
   const minLevel = findMinHeadingLevel(text);
 
   // How many levels to shift down so all headings sit below ##
-  const shift =
-    minLevel <= SECTION_LEVEL ? SECTION_LEVEL + 1 - minLevel : 0;
+  const shift = minLevel <= SECTION_LEVEL ? SECTION_LEVEL + 1 - minLevel : 0;
 
   if (shift === 0) return text;
 

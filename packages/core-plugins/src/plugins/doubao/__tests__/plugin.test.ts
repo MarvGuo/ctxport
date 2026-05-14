@@ -734,11 +734,9 @@ describe("doubaoPlugin", () => {
                     parent_id: "",
                     content: {
                       text_block: {
-                        text: [
-                          "### 三级标题",
-                          "正文",
-                          "#### 四级标题",
-                        ].join("\n"),
+                        text: ["### 三级标题", "正文", "#### 四级标题"].join(
+                          "\n",
+                        ),
                       },
                     },
                   },
@@ -804,10 +802,9 @@ describe("doubaoPlugin", () => {
                     parent_id: "",
                     content: {
                       text_block: {
-                        text: [
-                          "####### 七个井号不是标题",
-                          "## 正常二级",
-                        ].join("\n"),
+                        text: ["####### 七个井号不是标题", "## 正常二级"].join(
+                          "\n",
+                        ),
                       },
                     },
                   },
